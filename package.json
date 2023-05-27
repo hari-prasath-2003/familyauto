@@ -5,5 +5,8 @@
     "node-cron": "^3.0.2",
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.20.0"
+  },
+  "scripts": {
+    "start": "./build.sh;node index"
   }
 }
