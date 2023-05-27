@@ -25,7 +25,11 @@ function sendMsg() {
 }
 
 // Use the saved values
-const client = new Client({});
+const client = new Client({
+  puppeteer: {
+    args: ["--no-sandbox"],
+  },
+});
 
 // Save session values to the file upon successful auth
 client.on("authenticated", (session) => {
